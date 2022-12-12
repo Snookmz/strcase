@@ -29,6 +29,9 @@ import (
 )
 
 func toCamel(tb testing.TB) {
+
+	ConfigureAcronym("ID", "Id")
+
 	cases := [][]string{
 		{"test_case", "TestCase"},
 		{"test.case", "TestCase"},
